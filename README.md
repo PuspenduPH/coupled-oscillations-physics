@@ -144,6 +144,7 @@ $$
 $$
 
 **Exact Nonlinear Equations** (no small-angle approximation):
+
 $$
 \ddot\theta_1 = -\frac{g}{L}\sin\theta_1 + \frac{k}{m_1}(\sin\theta_2 - \sin\theta_1)\cos\theta_1
 $$
@@ -159,8 +160,9 @@ $$
 ### Mass–Spring Chains
 
 For $N$ masses with $(N+1)$ springs, the matrix equation is:
+
 $$
-M\ddot{\mathrm{x}} + K\mathrm{x} = 0
+M\ddot{\mathbf{x}} + K\mathbf{x} = 0
 $$
 
 where $M = \text{diag}(m_1, \ldots, m_N)$ and $K$ is the tridiagonal stiffness matrix:
@@ -172,7 +174,7 @@ $$
 Normal modes satisfy the generalized eigenvalue problem:
 
 $$
-K\mathrm{a} = \omega^2 M\mathrm{a}
+K\mathbf{a} = \omega^2 M\mathbf{a}
 $$
 
 ---
@@ -217,35 +219,29 @@ This notebook is ideal for:
 
 ### Animation Examples
 
-#### Two Coupled Pendulums — Energy transfer through beats phenomenon
+#### Two Coupled Pendulums — Energy transfer through the beats phenomenon
 
-<div align="center">
-  <video width="700" controls>
-    <source src="OUTPUTS/ANIMATIONS/coupled_pendulum/double_pendulum/beats_time_series.mp4" type="video/mp4">
-    <a href="OUTPUTS/ANIMATIONS/coupled_pendulum/double_pendulum/beats_time_series.mp4">Download the video</a>
-  </video>
-</div>
-
+https://github.com/user-attachments/assets/5283989a-f64d-4ba3-a233-d485fedba1d2
 
 #### Three Coupled Pendulums — Complex mode mixing
 
-<div align="center">
-  <video width="700" controls>
-    <source src="OUTPUTS/ANIMATIONS/coupled_pendulum/three_pendulum/energy_transfer_time_series.mp4" type="video/mp4">
-    <a href="OUTPUTS/ANIMATIONS/coupled_pendulum/three_pendulum/energy_transfer_time_series.mp4">Download the video</a>
-  </video>
-</div>
+
+https://github.com/user-attachments/assets/763f82cf-3a05-4435-80ba-d0e45189c93e
+
 
 #### Two Mass System — Beating patterns from mode superposition
 
+https://github.com/user-attachments/assets/893bcfd8-5330-4bd5-a8c8-521d59b36b00
+
+--- 
 <div align="center">
-  <img src="OUTPUTS/FIGURES/mass_spring_systems/beats_mode_analysis_demo.png" width="500"/>
+  <img src="OUTPUTS/FIGURES/mass_spring_systems/beats_mode_analysis_demo.png" width="600"/>
 </div>
 
 #### N-Mass Chain — Wave-like collective motion
 
 <div align="center">
-  <img src="OUTPUTS/ANIMATIONS/mass_spring_systems/demo_mass6.gif" width="00"/>
+  <img src="OUTPUTS/ANIMATIONS/mass_spring_systems/demo_mass6.gif" width="700"/>
 </div>
 
 ### Diagnostic Plots
