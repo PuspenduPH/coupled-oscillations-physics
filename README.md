@@ -71,7 +71,7 @@ The project bridges classical mechanics theory with modern computational physics
 
 ```
 📦 Coupled-Oscillations-Physics-Notebook
-├── 📓 coupled_oscillations.ipynb              # Main Jupyter notebook (11,000+ lines)
+├── 📓 coupled_oscillations.ipynb  # Main Jupyter notebook (11,000+ lines)
 ├── 📄 README.md                   # This file
 ├── 📋 requirements.txt            # Python dependencies
 ├── 📝 theory.md                   # Extended theoretical derivations (if present)
