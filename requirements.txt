@@ -1,0 +1,16 @@
+# Core numerical computing
+numpy
+scipy
+
+# Visualization
+matplotlib
+
+# Jupyter notebook support
+jupyter
+notebook
+
+# Interactive matplotlib backend for Jupyter
+ipympl
+
+# Optional: for better notebook experience
+ipywidgets
