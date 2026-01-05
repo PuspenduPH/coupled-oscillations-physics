@@ -14,9 +14,7 @@
 
 | **Three Pendulum System** | **Double Pendulum Beats** |
 |:-------------------------:|:-------------------------:|
-| 
-<img src="OUTPUTS/ANIMATIONS/coupled_pendulum/three_pendulum/default.gif" width="100%"/> | <img src="OUTPUTS/ANIMATIONS/coupled_pendulum/double_pendulum/beats.gif" width="86%"/> 
-|
+| <img src="OUTPUTS/ANIMATIONS/coupled_pendulum/three_pendulum/default.gif" width="100%"/> | <img src="OUTPUTS/ANIMATIONS/coupled_pendulum/double_pendulum/beats.gif" width="86%"/> |
 
 
 ## 📖 Overview
@@ -94,7 +92,7 @@ The project bridges classical mechanics theory with modern computational physics
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/coupled-oscillations-physics.git
+   git clone https://github.com/PuspenduPH/coupled-oscillations-physics.git
    cd coupled-oscillations-physics
    ```
 
@@ -147,10 +145,11 @@ $$
 
 **Exact Nonlinear Equations** (no small-angle approximation):
 $$
-\begin{aligned}
-\ddot\theta_1 &= -\frac{g}{L}\sin\theta_1 + \frac{k}{m_1}(\sin\theta_2 - \sin\theta_1)\cos\theta_1 \\
-\ddot\theta_2 &= -\frac{g}{L}\sin\theta_2 - \frac{k}{m_2}(\sin\theta_2 - \sin\theta_1)\cos\theta_2
-\end{aligned}
+\ddot\theta_1 = -\frac{g}{L}\sin\theta_1 + \frac{k}{m_1}(\sin\theta_2 - \sin\theta_1)\cos\theta_1
+$$
+
+$$
+\ddot\theta_2 = -\frac{g}{L}\sin\theta_2 - \frac{k}{m_2}(\sin\theta_2 - \sin\theta_1)\cos\theta_2
 $$
 
 **Linearized Normal Modes** (small angles: $\sin\theta \approx \theta$, $\cos\theta \approx 1$):
@@ -161,17 +160,19 @@ $$
 
 For $N$ masses with $(N+1)$ springs, the matrix equation is:
 $$
-M\ddot{\mathbf{x}} + K\mathbf{x} = 0
+M\ddot{\mathrm{x}} + K\mathrm{x} = 0
 $$
 
 where $M = \text{diag}(m_1, \ldots, m_N)$ and $K$ is the tridiagonal stiffness matrix:
+
 $$
 K_{jj} = k_j + k_{j+1}, \quad K_{j,j-1} = -k_j, \quad K_{j,j+1} = -k_{j+1}
 $$
 
 Normal modes satisfy the generalized eigenvalue problem:
+
 $$
-K\mathbf{a} = \omega^2 M\mathbf{a}
+K\mathrm{a} = \omega^2 M\mathrm{a}
 $$
 
 ---
